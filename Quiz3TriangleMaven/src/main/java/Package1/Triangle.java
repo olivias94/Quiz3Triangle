@@ -2,9 +2,9 @@ package Package1;
 
 import java.util.Scanner;
 import java.lang.Math;
-
+//check for how to create javadocs
 /**
- * This method extends GeometricObject.  It has three attributes: side1, side2, and side3.
+ * This class extends GeometricObject.  It has three attributes: side1, side2, and side3.
  * The abstract methods getPerimeter() and getArea() have been written. The method
  * toString() has also been updated to include more characteristics of Triangle.
  * 
