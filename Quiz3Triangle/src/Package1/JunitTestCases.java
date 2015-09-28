@@ -40,6 +40,7 @@ public class JunitTestCases {
 		Triangle2.setSide2(10);
 		Triangle2.setSide3(11);
 		assertTrue("Triangle.getArea() failed", Triangle2.getArea()==Math.sqrt(216));
+		assertTrue("Triangle.getPerimeter() failed", Triangle2.getPerimeter()==24);
 	}
 
 }
