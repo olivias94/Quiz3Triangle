@@ -10,8 +10,6 @@ import org.junit.Test;
 
 public class JunitTestCases {
 	
-
-	
 	@BeforeClass
 	public static void setUpBeforeClass() throws Exception{
 	}
