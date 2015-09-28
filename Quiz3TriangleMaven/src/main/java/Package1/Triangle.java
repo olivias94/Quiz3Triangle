@@ -63,18 +63,29 @@ public class Triangle extends GeometricObject {
 		return this.side3;
 	}
 	
-	//abstract methods in GeometricObject
+	/**
+	 * abstract method in GeometricObject, defined in Triangle
+	 *@return perimeter
+	 */
 	public double getPerimeter(){
 		double perimeter = side1 + side2 + side3;
 		return perimeter;
 	}
+	/**
+	 * abstract method in GeometricObject, defined in Triangle
+	 * @return area
+	 */
 	public double getArea(){
 		double area = Math.sqrt((getPerimeter()/2)*((getPerimeter()/2) - side1)*((getPerimeter()/2) - side2)*((getPerimeter()/2) - side3));
 		return area;
 	}
 	
-	//returns a string that includes everything about the triangle
-	@Override //overrides GeometricObject.toString() and Object.toString()
+	/**
+	 * returns a string that includes everything about the triangle
+	 * overrides GeometricObject.toString() and Object.toString()
+	 * @return string containing information about the current instance of Triangle
+	 */
+	@Override 
 	public String toString(){
 		return "Created on: " + getDateCreated() + "\ncolor: " + getColor() +
 			      "filled: " + isFilled() + "\nside1: " + side1 + 
